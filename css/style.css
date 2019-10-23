@@ -1,0 +1,191 @@
+@import url("https://fonts.googleapis.com/css?family=Quicksand:400,700&display=swap");
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font: 700 16px "Quicksand", sans-serif;
+  color: #fbf6e4;
+  background-color: #e5eeee;
+}
+
+/* Layout */
+.ba-container {
+  padding-left: 20px;
+  padding-right: 20px;
+  max-width: 440px;
+  margin: 0 auto;
+}
+
+/* Typography */
+a,
+input[type="submit"],
+input[type="button"],
+button {
+  transition: color 0.2s ease-in, border-color 0.2s ease-in,
+    background-color 0.2s ease-in, opacity 0.2s ease-in;
+}
+input[type="submit"],
+input[type="button"],
+button,
+.ba-button {
+  display: inline-block;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="number"],
+input[type="tel"],
+textarea,
+select {
+  transition: color 0.2s ease-in, border-color 0.2s ease-in,
+    background-color 0.2s ease-in, opacity 0.2s ease-in;
+  background-color: transparent;
+  font: inherit;
+  color: inherit;
+  width: 262px;
+  height: 37px;
+  border: 2px solid #a585cb;
+  margin-bottom: 20px;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="password"]:focus,
+input[type="number"]:focus,
+input[type="tel"]:focus,
+textarea:focus,
+select:focus {
+  border-color: #9e8ecc;
+}
+textarea {
+}
+
+.ba-main {
+  background-image: url(../img/bcg.png);
+  background-position: center;
+  padding: 50px 70px 55px;
+  margin-top: 8.6vh;
+}
+
+.ba-menu {
+  margin-bottom: 54px;
+}
+
+.ba-menu__item {
+  text-decoration: none;
+  color: inherit;
+  font-size: 18px;
+  margin-right: 25px;
+}
+
+.ba-menu__item:hover {
+  color: inherit;
+}
+
+.ba-menu__item--active {
+  border-bottom: 2px solid #e66a64;
+}
+
+.ba-menu__item--passive {
+  color: #ddbdef;
+}
+
+label {
+  display: block;
+  cursor: pointer;
+  margin-bottom: 10px;
+  transition: color 0.2s ease-in;
+}
+
+label:hover,
+input:hover,
+label:hover + input {
+  color: #f2ebd2;
+  border-color: #9e8ecc;
+}
+
+.ba-checkbox {
+  display: block;
+  position: relative;
+  font-size: 13px;
+  padding-left: 20px;
+  margin-bottom: 40px;
+}
+
+.ba-checkbox__input {
+  display: none;
+  position: absolute;
+}
+
+.ba-checkbox__box {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 16px;
+  height: 16px;
+  background-color: transparent;
+  border: 1px solid #23ae92;
+}
+
+.ba-checkbox__input:checked + .ba-checkbox__box {
+  background-color: #23ae92;
+}
+
+.ba-checkbox__box:after {
+  content: "";
+  position: absolute;
+  border: solid #ece3e0;
+  border-width: 0 2px 2px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+  width: 6px;
+  height: 10px;
+  left: 5px;
+}
+
+.ba-checkbox__input:not(:checked) + .ba-checkbox__box:after {
+  display: none;
+}
+
+.ba-button {
+  width: 262px;
+  background-color: #23ae92;
+  font-size: 18px;
+  color: inherit;
+  border: none;
+  padding-top: 17px;
+  padding-bottom: 15px;
+  margin-bottom: 35px;
+  cursor: pointer;
+}
+
+.ba-button:hover {
+  background-color: #2cb79b;
+}
+
+.ba-second-menu {
+  display: flex;
+  justify-content: space-between;
+}
+
+.ba-second-menu__item {
+  display: block;
+  border-bottom: 1px solid #4236b0;
+  padding-bottom: 3px;
+  text-decoration: none;
+  color: #9791c3;
+  font-size: 13px;
+}
+
+.ba-second-menu__item:hover {
+  color: #a6a1cb;
+  border-bottom: 1px solid #4931b6;
+}
